@@ -1,0 +1,500 @@
+   10  git branch
+   11  git branch --delete test
+   12  git branch
+   13  git status
+   14  git push --help
+   15  git push -d test
+   16  git push origin -d test
+   17  touch plikajanuszowaty
+   18  git status
+   19  git add .
+   20  git commit -m "nowy plik januszowaty"
+   21  git checkout zsk
+   22  git status
+   23  git push --all
+   24  ls
+   25  git merge janusz
+   26  ls
+   27  git branch
+   28  clear
+   29  git clone https://github.com/miroslawszyper/3d.git
+   30  cd 3d
+   31  ls
+   32  alias c=clear
+   33  c
+   34  git branch
+   35  git checkout zsk
+   36  git checkout -b zsk
+   37  git branch
+   38  git checkout -b tesr
+   39  git checkout zsk
+   40  git branch --delete tesr
+   41  git branch
+   42  git checkout -b test
+   43  ls
+   44  touch pliktest
+   45  git status
+   46  git add .
+   47  git status
+   48  git checkout zsk
+   49  ls
+   50  git status
+   51  git commit -m "plik pliktest z brancha test"
+   52  git status
+   53  git push origin zsk
+   54  git push origin test
+   55  git push --all
+   56  git checkout test
+   57  touch testnew
+   58  git add .
+   59  git commit -m "pliknew z brancha test"
+   60  git push origin test
+   61  git merge zsk
+   62  ls
+   63  git checkout zsk
+   64  ls
+   65  git merge test
+   66  ls
+   67  git checkout main
+   68  ls
+   69  git merge test zsk
+   70  ls
+   71  git checkout zsk
+   72  touch plikpomerge
+   73  git add .
+   74  git commit -m "nowy plik po merge"
+   75  git push origin zsk
+   76  ls
+   77  git checkout main
+   78  ls
+   79  git branch --delete test
+   80  git push origin test
+   81  git push origin -d test
+   82  alias c=clear
+   83  c
+   84  git status
+   85  git add .
+   86  git status
+   87  git commit -m "plik fistoria"
+   88  git status
+   89  git push origin main
+   90  c
+   91  git status
+   92  git branch
+   93  git branch zsk
+   94  git branch
+   95  git checkout zsk
+   96  git branch
+   97  touch plikzsk
+   98  ls
+   99  git checkout main
+  100  ls
+  101  git branch test
+  102  git branch
+  103  git status
+  104  git checkout test
+  105  git status
+  106  git add .
+  107  git status
+  108  git commit -m "dodanie pliku plikzsk utworzonego na branch-u zsk"
+  109  git status
+  110  git push origin test
+  111  git push origin test
+  112  git push origin zsk
+  113  git branch --help
+  114  git checkout --help
+  115  git checkout -b wakacje
+  116  git push origin wakacje
+  117  git branch
+  118  git checkout zsk
+  119  git merge test
+  120  ls
+  121  git push origin zsk
+  122  git checkout test
+  123  git branch --delete test
+  124  git checkout zsk
+  125  git branch --delete test
+  126  git status
+  127  git checkout
+  128  git branch
+  129  git push origin test
+  130  git push origin -d test
+  131  touch nowyplikzsk
+  132  git add .
+  133  git commit
+  134  git checkout main
+  135  touch nowyplikmain
+  136  git status
+  137  git add .
+  138  git commit
+  139  git status
+  140  git branch
+  141  git branch -d wakacje
+  142  git branch --delete wakacje
+  143  git branch -D wakacje
+  144  git status
+  145  git push origin --all
+  146  git push -d wakacje
+  147  git push origin -d wakacje
+  148  alias c=clear
+  149  git branch
+  150  git branch 
+  151  git branch --help
+  152  git branch zsk
+  153  git branch 
+  154  git checkout zsk
+  155  git branch 
+  156  git status
+  157  git push origin zsk
+  158  touch plikzsk
+  159  git add .
+  160  git status
+  161  git checkout main
+  162  git status
+  163  git commit 
+  164  git status
+  165  git push origin main
+  166  history
+  167  git checkout stasiu
+  168  git checkout -b stasiu
+  169  git branch
+  170  git branch --delete stasiu
+  171  git push origin stasiu
+  172  touch filedanger
+  173  git add .
+  174  git commit
+  175  git push origin stasiu
+  176  git checkout zsk
+  177  ls
+  178  git marge stasiu
+  179  git merge stasiu
+  180  ls
+  181  git branch --delete stasiu
+  182  git push origin stasiu
+  183  git push origin -d stasiu
+  184  touch filezskostatni
+  185  git checkout main
+  186  touch filemainostatni
+  187  git status
+  188  git add .
+  189  git status
+  190  git commit
+  191  git status
+  192  git push --all
+  193  history > historia
+  194  history
+  195  git branch
+  196  git branch --help
+  197  git branch zsk
+  198  git branch
+  199  git checkout zsk
+  200  git push origin zsk
+  201  touch plikzsk
+  202  git status
+  203  git checkout main
+  204  git status
+  205  git add .
+  206  git status
+  207  git commit
+  208  git status
+  209  git push origin main
+  210  touch newfilemain
+  211  git add .
+  212  git commit
+  213  git push --all
+  214  touch mainall
+  215  git checkout zsk
+  216  touch zskall
+  217  git status
+  218  git add .
+  219  git commit
+  220  git push --all
+  221  git checkout -b test
+  222  touch testfile
+  223  git checkout wakacje
+  224  git checkout -b wakacje
+  225  touch wakacjefile
+  226  git status
+  227  git add *
+  228  git commit 
+  229  git status
+  230  git push origin test
+  231  git push origin wakacje
+  232  git checkout test
+  233  touch oooooooooooooooo
+  234  git add .
+  235  git commit 
+  236  git push origin test
+  237  git checkout wakacje
+  238  ls
+  239  git merge test
+  240  git merge test
+  241  git branch --delete wakacje
+  242  git branch --delete test
+  243  git branch
+  244  git push test
+  245  git push -d test
+  246  git push origin test
+  247  git push -d origin test
+  248  history
+  249  cd /
+  250  c:
+  251  cd c:
+  252  dir
+  253  cd dane
+  254  git clone https://github.com/szyper/zskprivate.git
+  255  git status
+  256  ls
+  257  cd zskprivate/
+  258  git status
+  259  git add *
+  260  git status
+  261  git commit
+  262  git push origin main
+  263  git add *
+  264  git commit -m "2cg1 kolekcje"
+  265  git push origin main
+  266  git add *
+  267  git commit -m "2cg1 kolekcje cities csv"
+  268  git push origin main
+  269  git add *
+  270  git commit -m "wyklad"
+  271  git push origin main
+  272  git status
+  273  git commit
+  274  git add *
+  275  git status
+  276  git commit
+  277  git status
+  278  git push origin main
+  279  git log
+  280  git branch
+  281  clear
+  282  ls
+  283  ls
+  284  git status
+  285  git add *
+  286  git status
+  287  git commit
+  288  git status
+  289  git add *
+  290  git status
+  291  ls
+  292  cd ..
+  293  ls
+  294  git add *
+  295  git status
+  296  git commit -m "modified files 2c"
+  297  git status
+  298  git push origin main
+  299  git status
+  300  git add *
+  301  git status
+  302  git add *
+  303  git commit -m "modified files 2c"
+  304  git push origin main
+  305  git status
+  306  git branch
+  307  git add *
+  308  git commit -m "modified 2 files 2c"
+  309  git push origin main
+  310  git commit -m "modified 1 files 2cdg1"
+  311  git add *
+  312  git commit -m "modified 1 files 2cdg1"
+  313  git push origin main
+  314  git add *
+  315  git commit -m "modified 1 files 2dg1"
+  316  git push origin main
+  317  git status
+  318  git clone https://github.com/szyper/tebcs.git
+  319  ls
+  320  cd tebcs/
+  321  ls
+  322  git status
+  323  ls
+  324  git status
+  325  git add *
+  326  git status
+  327  git commit
+  328  git status
+  329  git push origin main
+  330  git push origin main
+  331  git push origin main
+  332  git push origin main
+  333  clear
+  334  alias c=clear
+  335  c
+  336  git status
+  337  git add *
+  338  git status
+  339  git commit -m "modified fiel"
+  340  git push origin main
+  341  git add *
+  342  git commit -m "type, string, interpolacja"
+  343  git push origin main
+  344  git add *
+  345  git status
+  346  git commit -m "2dg2"
+  347  git push origin main
+  348  git commit -m "2dg2 5)"
+  349  git add *
+  350  git commit -m "2dg2 5)"
+  351  git push origin main
+  352  git status
+  353  git commit -m "3dg1"
+  354  git add *
+  355  git commit -m "3dg1"
+  356  git push origin main
+  357  git add *
+  358  git commit -m "3dg1 csvFile"
+  359  git push origin main
+  360  git add *
+  361  git commit -m "2cg1 csvFile"
+  362  git push origin main
+  363  git shortlog -1
+  364  git log format="%an [%cr]"
+  365  git log --start -file
+  366  git log --format="%an %s"
+  367  git log --file
+  368  git log --summary -1
+  369  git clone https://github.com/szyper/laravel.git
+  370  ls
+  371  cd laravel/
+  372  ls
+  373  ls
+  374  git status
+  375  git add *
+  376  git status
+  377  history
+  378  git commit
+  379  git status
+  380  git push origin main
+  381  history
+  382  git status
+  383  git status
+  384  git clone https://github.com/szyper/wsbphp.git
+  385  git add *
+  386  cd wsbphp
+  387  git status
+  388  git add *
+  389  git commit
+  390  git push origin  main
+  391  git status
+  392  git add *
+  393  git commit "add files"
+  394  git commit -m "add files"
+  395  git push origin  main
+  396  git status
+  397  git add *
+  398  git commit -m "add files"
+  399  git push origin  main
+  400  git add *
+  401  git commit -m "add files"
+  402  git push origin  main
+  403  git status
+  404  git add *
+  405  git commit
+  406  git push origin main
+  407  git add *
+  408  git commit -m "add new files"
+  409  git push origin main
+  410  git status
+  411  git status
+  412  git add *
+  413  git commit -m "add new files"
+  414  git push origin main
+  415  git clone https://github.com/szyper/tebcs.git
+  416  git add *
+  417  git status
+  418  ls
+  419  cd tebcs
+  420  git add *
+  421  git commit -m "teb cs"
+  422  git push origin main
+  423  git add *
+  424  git commit -m "teb cs"
+  425  git push origin main
+  426  git clone https://github.com/szyper/zskprivate.git
+  427  git add *
+  428  git add *
+  429  git commit -m "teb cs"
+  430  git push origin main
+  431  git add *
+  432  git commit -m "zsk cs array"
+  433  git push origin main
+  434  git commit -m "zsk cs array"
+  435  git add *
+  436  git commit -m "zsk cs array"
+  437  git push origin main
+  438  git add *
+  439  git commit -m "zsk cs array"
+  440  git push origin main
+  441  git add *
+  442  git commit -m "zsk cs array"
+  443  git push origin main
+  444  git clone https://github.com/szyper/3dg1.git
+  445  cd 3dg1/
+  446  ls
+  447  touch index.php
+  448  ls
+  449  git add *
+  450  git commit -m "add file"
+  451  git push origin main
+  452  git branch test
+  453  git branch
+  454  checkout test
+  455  git checkout test
+  456  code index.php 
+  457  git status
+  458  git add .
+  459  git status
+  460  git commit -m "modyfikacja pliku"
+  461  git status
+  462  git checkout main
+  463  code index.php 
+  464  git status
+  465  git add .
+  466  git commit -m "update main"
+  467  git merge test
+  468  code index.php 
+  469  git add .
+  470  git status
+  471  git commit -m "merge test"
+  472  git status
+  473  git branch -D test
+  474  git branch
+  475  git branch zsk
+  476  git checkout zsk
+  477  code index.php 
+  478  git commit -m "modified file index.php"
+  479  git add .
+  480  git commit -m "modified file index.php"
+  481  git checkout main
+  482  man rm
+  483  rm -rf index.php 
+  484  ls
+  485  git add .
+  486  git commit -m "delete file index.php"
+  487  ls
+  488  git branch
+  489  git merge zsk
+  490  git status
+  491  ls
+  492  git rm index.php 
+  493  git add .
+  494  git commit -m "delete"
+  495  git push
+  496  history
+  497  history > historia3dg1
+  498  git add *
+  499  git commit -m "array"
+  500  git push origin main
+  501  git clone https://github.com/szyper/wsb_pai_dIinz_2_K15_Inf.git
+  502  ls
+  503  cd wsb_pai_dIinz_2_K15_Inf/
+  504  ls
+  505  alias c=clear
+  506  c
+  507  history
+  508  c
+  509  history > filehistory
