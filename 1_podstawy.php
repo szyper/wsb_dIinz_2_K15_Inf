@@ -57,12 +57,4 @@ if ($x===$y) {
   echo "Nieidentyczne";
 }
 
-
-
-
-
-
-
-
-
 ?>
