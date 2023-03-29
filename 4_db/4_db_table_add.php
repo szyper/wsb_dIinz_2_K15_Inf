@@ -1,3 +1,6 @@
+<?php
+  session_start();
+?>
 <!doctype html>
 <html lang="pl">
 <head>
@@ -11,6 +14,11 @@
 <body>
 	<h4>Użytkownicy</h4>
 	<?php
+    if (isset($_SESSION["error"])){
+	    echo $_SESSION["error"];
+      unset($_SESSION["error"]);
+    }
+
 		require_once "../scripts/connect.php";
 	  $sql = "select `users`.`id`, `users`.`firstName`, `users`.`lastName`, `users`.`birthday`, `cities`.`city`, `states`.`state`, `countries`.`country` FROM `users` INNER JOIN `cities` ON `users`.`city_id` = `cities`.`id` INNER JOIN `states` ON `cities`.`state_id`=`states`.`id` INNER JOIN `countries` ON `states`.`country_id`=`countries`.`id`;";
 
@@ -38,6 +46,7 @@ USERSTABLE;
           <td>$user[state]</td>
           <td>$user[country]</td>
           <td><a href="../scripts/delete_user.php?deleteUserId=$user[id]">Usuń</a></td>
+          <td><a href="./4_db_table_add.php?updateUserId=$user[id]">Edytuj</a></td>
         </tr>
 USERSTABLE;
 	    }
@@ -57,6 +66,34 @@ USERSTABLE;
 		    echo "<hr>Nie usunięto użytkownika";
 	    }
     }
+
+    if (isset($_GET["addUserForm"])){
+      echo <<< ADDUSERFORM
+        <hr><h4>Dodawanie użytkownika</h4>
+        <form action="../scripts/add_user.php" method="post">
+          <input type="text" name="firstName" placeholder="Podaj imię" autofocus><br><br>
+          <input type="text" name="lastName" placeholder="Podaj nazwisko"><br><br>
+          <select name="city_id">
+ADDUSERFORM;
+        $sql = "SELECT * FROM `cities`";
+        $result = $conn->query($sql);
+        while ($city = $result->fetch_assoc()){
+          echo "<option value=\"$city[id]\">$city[city]</option>";
+        }
+	    echo <<< ADDUSERFORM
+          </select><br><br>
+          <input type="date" name="birthday">Data urodzenia<br><br>
+          <input type="submit" value="Dodaj użytkownika">
+        </form>
+ADDUSERFORM;
+      }else{
+        echo '<hr><a href="./4_db_table_add.php?addUserForm=1">Dodaj użytkownika</a>';
+    }
 	?>
+
+
+
+
+
 </body>
 </html>
