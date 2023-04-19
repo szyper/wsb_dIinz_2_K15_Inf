@@ -1,0 +1,6 @@
+1) regulamin nie zaznaczony (!isset)
+2) adresy mail są różny
+3) hasła są różne
+
+dodać zmienną pomocniczą error (0), jak będzie błąd to 1
+jeśli error != 0 to cofamy użytkownika i wyświetlamy komunikat (zmienna sesyjna) o błędzie nad formularzem
