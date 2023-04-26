@@ -46,7 +46,7 @@ ERROR;
 
   <div class="card card-outline card-primary">
     <div class="card-header text-center">
-      <a href="../../index2.html" class="h1"><b>Admin</b>LTE</a>
+      <a href="./" class="h1"><b>Admin</b>LTE</a>
     </div>
     <div class="card-body">
       <p class="login-box-msg">Rejestracja użytkownika</p>
@@ -135,6 +135,21 @@ ERROR;
           </div>
         </div>
 
+<!-- płeć -->
+        <div class="input-group mb-2">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" value="w" checked>
+            <label class="form-check-label">Kobieta</label>
+          </div>
+        </div>
+
+        <div class="input-group mb-2">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" value="m">
+            <label class="form-check-label">Mężczyzna</label>
+          </div>
+        </div>
+
         <div class="row">
           <div class="col-7">
             <div class="icheck-primary">
@@ -163,7 +178,7 @@ ERROR;
         </a>
       </div>
 
-      <a href="login.html" class="text-center">I already have a membership</a>
+      <a href="./" class="text-center">I already have a membership</a>
     </div>
     <!-- /.form-box -->
   </div><!-- /.card -->
