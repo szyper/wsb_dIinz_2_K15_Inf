@@ -37,6 +37,13 @@
 		$_SESSION["error"] = "Adresy email są różne!";
 	}
 
+	//walidacja hasła
+
+if (!preg_match('/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^\w\d\s])\S{8,}$/', $_POST["pass1"])) {
+	$error = 1;
+	$_SESSION["error"] = "Hasło nie spełnia wymagań!";
+}
+
 	if ($error != 0){
 		echo "<script>history.back();</script>";
 		exit();
