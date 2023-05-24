@@ -1,3 +1,9 @@
+<?php
+  session_start();
+  if (isset($_SESSION["logged"]) && session_status() == 2){
+    header("location: ./logged.php");
+  }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,20 +25,41 @@
   <!-- /.login-logo -->
 
   <?php
-    if (isset($_GET["error"])){
+    if (isset($_GET["error"]) || isset($_SESSION["error"])){
 	   echo <<< ERROR
        <div class="callout callout-danger">
                   <h5>Błąd!</h5>
-                  <p>$_GET[error]</p>
+                  <p>
+  ERROR;
+                      if (isset($_GET["error"])){
+	                      echo $_GET["error"];
+                      }
+
+                      if (isset($_SESSION["error"])){
+	                      echo $_SESSION["error"];
+                        unset($_SESSION["error"]);
+                      }
+
+                   echo <<< ERROR
+                  </p>
                 </div>
 ERROR;
-
     }
+
+  if (isset($_SESSION["success"])){
+	  echo <<< ERROR
+       <div class="callout callout-success">
+                  <h5>Gratulacje!</h5>
+                  <p>$_SESSION[success]</p>
+                </div>
+ERROR;
+    unset($_SESSION["success"]);
+  }
   ?>
 
   <div class="card card-outline card-primary">
     <div class="card-header text-center">
-      <a href="../index2.html" class="h1"><b>Admin</b>LTE</a>
+      <a href="./" class="h1"><b>Admin</b>LTE</a>
     </div>
     <div class="card-body">
       <p class="login-box-msg">Sign in to start your session</p>

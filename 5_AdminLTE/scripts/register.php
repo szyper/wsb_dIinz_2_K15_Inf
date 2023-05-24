@@ -87,14 +87,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 		exit();
 	}
 
-	foreach ($_POST as $key => $value){
-		if (!$_POST["pass1"] && !$_POST["pass2"])
-			sanitizeInput($_POST["$key"]);
-	}
+	//sanitacja danych (dokończyć)
+//	foreach ($_POST as $key => $value){
+//		if (!$_POST["pass1"] && !$_POST["pass2"])
+//			sanitizeInput($_POST["$key"]);
+//	}
 
 	$stmt = $conn->prepare("INSERT INTO `users` (`email`, `additional_email`, `city_id`, `firstName`, `lastName`, `birthday`, `gender`, `avatar`, `password`, `created_at`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, current_timestamp());");
 
-	$pass = password_hash('$_POST["pass1"]', PASSWORD_ARGON2ID);
+	$pass = password_hash($_POST["pass1"], PASSWORD_ARGON2ID);
 
 	$avatar = ($_POST["gender"] == 'm') ? './jpg/man.png' : './jpg/woman.png';
 
@@ -104,6 +105,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 
 	if ($stmt->affected_rows == 1){
 		$_SESSION["success"] = "Dodano użytkownika $_POST[firstName] $_POST[lastName]";
+		header(("location: ../pages"));
+		exit();
 	}else{
 		$_SESSION["error"] = "Nie udało się dodać użytkownika!";
 	}
