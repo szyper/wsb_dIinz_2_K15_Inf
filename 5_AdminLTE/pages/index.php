@@ -1,6 +1,6 @@
 <?php
   session_start();
-  if (isset($_SESSION["logged"]) && session_status() == 2){
+  if (isset($_SESSION["logged"]) && session_status() == 2 && session_id() == $_SESSION["logged"]["session_id"]){
     header("location: ./logged.php");
   }
 ?>
@@ -54,6 +54,16 @@ ERROR;
                 </div>
 ERROR;
     unset($_SESSION["success"]);
+  }
+
+  if (isset($_GET["logout"])){
+	  echo <<< ERROR
+       <div class="callout callout-info">
+                  <h5>Informacja!</h5>
+                  <p>Prawidłowo wylogowano użytkownika</p>
+                </div>
+ERROR;
+	  unset($_GET["logout"]);
   }
   ?>
 
